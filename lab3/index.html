@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanchit Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">Sanchit Portfolio</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm <span class="highlight">Sanchit</span></h2>
+      <p class="role">Web Developer Learner</p>
+      <p class="animate-text">Full Stack Developer</p>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <strong>Sanchit Kumar</strong>. I’m learning web development 
+      and this is my first portfolio website made using HTML, CSS, Flexbox, Grid,
+      animations and responsive design.
+    </p>
+  </section>
+
+  <!-- Skills Section using Grid -->
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">C Language</div>
+      <div class="skill-card">SQL</div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Grid) -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Simple HTML & CSS webpage.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Mini project made for assignment.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Responsive layout using Flexbox.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+      <label>Name:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Message:</label>
+      <textarea required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sanchit Kumar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

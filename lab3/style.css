@@ -1,0 +1,176 @@
+/* Basic */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #0d47a1;
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #90caf9;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: white;
+}
+
+.hero-text {
+  max-width: 40%;
+}
+
+.role {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.animate-text {
+  font-size: 1.4rem;
+  color: #0d47a1;
+  animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% { color: #0d47a1; }
+  100% { color: #1565c0; }
+}
+
+.hero-img img {
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid #0d47a1;
+}
+
+/* Sections */
+section {
+  background: white;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Grid for Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background: #e3f2fd;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: #bbdefb;
+  transform: scale(1.05);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: #fafafa;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+/* Form */
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8rem;
+  margin-top: .5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background: #0d47a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+  background: #1565c0;
+}
+
+/* Back to top */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: .7rem 1rem;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
